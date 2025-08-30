@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+      - apt-get update -y
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Compiling the code...
+artifacts:
+  files:
+    - '**/*'
